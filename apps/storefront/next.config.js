@@ -57,24 +57,19 @@ module.exports = withBundleAnalyzer({
     return [
       {
         source: "/checkout/",
-        // destination: `${process.env.NEXT_PUBLIC_CHECKOUT_URL}/`,
-        destination: `https://google.com/`,
-        basePath: false,
+        destination: `${process.env.NEXT_PUBLIC_CHECKOUT_URL}/`,
       },
       {
         source: `${checkoutEmbededInStorefrontPath}/`,
         destination: `${process.env.NEXT_PUBLIC_CHECKOUT_APP_URL}/`,
-        basePath: false,
       },
       {
         source: `${checkoutEmbededInStorefrontPath}/:path*/`,
         destination: `${process.env.NEXT_PUBLIC_CHECKOUT_APP_URL}/:path*/`,
-        basePath: false,
       },
       {
         source: `${checkoutEmbededInStorefrontPath}/:path*`,
         destination: `${process.env.NEXT_PUBLIC_CHECKOUT_APP_URL}/:path*`,
-        basePath: false,
       },
 
       {
