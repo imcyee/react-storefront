@@ -53,7 +53,9 @@ module.exports = withBundleAnalyzer({
   },
   async rewrites() {
     const cloudDeploymentUrl = process.env.CLOUD_DEPLOYMENT_URL;
-
+    console.log("Rewrites called");
+    console.log(process.env.NEXT_PUBLIC_CHECKOUT_URL);
+    console.log(process.env.NEXT_PUBLIC_CHECKOUT_APP_URL);
     return [
       {
         source: "/checkout/",
