@@ -59,7 +59,9 @@ module.exports = withBundleAnalyzer({
     return [
       {
         source: "/checkout/",
-        destination: `${process.env.NEXT_PUBLIC_CHECKOUT_URL}/`,
+
+        destination: `https://react-storefront-saleor-app-checkout-jade.vercel.app/checkout-spa/`,
+        // destination: `${process.env.NEXT_PUBLIC_CHECKOUT_URL}/`,
       },
       {
         source: `${checkoutEmbededInStorefrontPath}/`,
