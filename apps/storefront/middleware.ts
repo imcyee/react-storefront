@@ -37,6 +37,11 @@ export function LocaleRedirectionMiddleware({
 
   const url = nextUrl.clone();
   url.pathname = `/${channel}/${locale}`;
+
+  console.log("Rewrites called");
+  console.log(process.env.NEXT_PUBLIC_CHECKOUT_URL);
+  console.log(process.env.NEXT_PUBLIC_CHECKOUT_APP_URL);
+
   return NextResponse.redirect(url);
 }
 
