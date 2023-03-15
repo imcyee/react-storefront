@@ -57,7 +57,8 @@ module.exports = withBundleAnalyzer({
     return [
       {
         source: "/checkout/",
-        destination: `${process.env.NEXT_PUBLIC_CHECKOUT_URL}/`,
+        // destination: `${process.env.NEXT_PUBLIC_CHECKOUT_URL}/`,
+        destination: `https://google.com/`,
         basePath: false,
       },
       {
